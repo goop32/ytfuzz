@@ -33,9 +33,6 @@ import string
 # -w	wait for next request (./ytfuzz.py -w 5 [five seconds])
 # -p	log public videos as well
 
-proxies = {'http': 'http://192.168.49.1:8000',
-'https': 'http://192.168.49.1:8000',
-}
 inv = "<title>YouTube</title>"
 count = 0
 invCount = 0
@@ -47,7 +44,7 @@ while True:
 	# url = "https://www.youtube.com/watch?v=jfWjEFr5B3" - invalid
 	url = ("https://www.youtube.com/watch?v=" + gen)
 	# print(url)
-	req = requests.get(url, proxies=proxies)
+	req = requests.get(url)
 	# req.encoding = 'ISO-8859-1'
 	txt = req.text
 	# print(req.encoding)

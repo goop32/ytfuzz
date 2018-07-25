@@ -1,0 +1,7 @@
+ytfuzz v0.2b - 22 July 2018
+* added options for proxy, output files, and more
+* cleaned up code a bit
+* handled Ctrl-C to properly log
+
+ytfuzz v0.1b - 20 July 2018
+* bare minimum for operation
