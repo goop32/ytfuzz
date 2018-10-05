@@ -3,6 +3,9 @@ Fuzz for unlisted/private YouTube videos
 
 Python 3.x only, no Python 2.x support
 
+### Requirements
+pip install requests beautifulsoup4 time random string argparse threading
+
 ### Usage
 ytfuzz.py (options)
 
